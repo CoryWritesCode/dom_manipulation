@@ -1,5 +1,6 @@
 let friends = ["Bri", "Sam", "Ray", "Jon", "Ramsey"];
 let button = document.getElementsByTagName('button');
+document.body.style.cssText = "text-align: center";
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let friendName = document.createTextNode(`${friends[p]}`)
       friendCard.appendChild(friendName);
       friendShip.appendChild(friendCard);
+      friendCard.style.cssText = "text-align: center; font-size: 50px";
 
       for (let s = 99; s > 0; s--) {
         let lyric = document.createElement('p');
@@ -32,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         let verse = document.createTextNode(`${song}`);
         lyric.appendChild(verse);
         friendCard.appendChild(lyric);
+        lyric.style.cssText = "font-size: 20px";
+        
 
       };
 
